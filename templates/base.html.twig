@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+
+        <title>{% block title %}{% endblock %}</title>
+        {% block stylesheets %}
+            {{  encore_entry_link_tags('app') }}
+        {% endblock %}
+        <!-- Custom styles for this template -->
+    </head>
+<body>
+{% block body %}{% endblock %}
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+{% endblock %}
+</body>
+</html>
