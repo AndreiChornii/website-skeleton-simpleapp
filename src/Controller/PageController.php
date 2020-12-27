@@ -25,6 +25,14 @@ class PageController extends AbstractController
     }
 
     /**
+     * @Route("/contacts", name="contacts_page")
+     */
+    public function contacts(): Response
+    {
+        return $this->render('page/contacts.html.twig', $this->getPageContent());
+    }
+
+    /**
      * @return array
      */
     public function getPageContent(): array
